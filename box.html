@@ -157,10 +157,10 @@
         <p class="left-align light" style="text-align:justify;">
           La box Jeedom Pro est la box Jeedom haut de gamme. La Jeedom Pro, reprend les concepts de la Jeedom Center : compatible avec un maximum de protocoles (Z-Wave, RFXcom, EnOcean, Edisio, etc.), modulable et personnalisable.
 
-              Un des prinicpaux intérêts de la Jeedom Pro est l'utilisation en natif du mode déporté. Ce mode permet de séparer les différentes fonctions de Jeedom sur plusieurs équipements (carte processeur) appelés blocs.
-              Ces fonctions sont généralement la gestion des protocoles domotiques. Chaque protocole peut être géré avec la Jeedom Pro par un bloc "satellite" indépendamment des autres protocoles et du coeur (la box centrale). L'utilisation de ce mode déporté a de nombreux avantages comme l'augmentation des performances, de la réactivité et de la fiabilité.
+          Un des prinicpaux intérêts de la Jeedom Pro est l'utilisation en natif du mode déporté. Ce mode permet de séparer les différentes fonctions de Jeedom sur plusieurs équipements (carte processeur) appelés blocs.
+          Ces fonctions sont généralement la gestion des protocoles domotiques. Chaque protocole peut être géré avec la Jeedom Pro par un bloc "satellite" indépendamment des autres protocoles et du coeur (la box centrale). L'utilisation de ce mode déporté a de nombreux avantages comme l'augmentation des performances, de la réactivité et de la fiabilité.
 
-              Il est possible de placer le bloc satellite à un endroit différent de la box pour une meilleure couverture. Pour les protocoles sans maillage (RFXcom, EnOcean...) il est possible d'avoir plusieurs satellites pour augmenter la couverture.
+          Il est possible de placer le bloc satellite à un endroit différent de la box pour une meilleure couverture. Pour les protocoles sans maillage (RFXcom, EnOcean...) il est possible d'avoir plusieurs satellites pour augmenter la couverture.
         </p>
 
         <center><img src="box/pro-box.png"></center>
@@ -221,6 +221,7 @@
        <p class="grey-text text-lighten-5">
         JEEDOM est une marque protégée, pour toute question vous pouvez nous contacter via <a class="white-text" href="mailto:contact@jeedom.com">contact@jeedom.com</a>.
       </p>
+      <a class="waves-effect waves-light btn modal-trigger" href="#md_mention_legale">Mention légale</a>
     </div>
     <div class="col l3 s12">
       <h5 class="white-text">Liens</h5>
@@ -246,10 +247,42 @@
 </footer>
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<div id="md_mention_legale" class="modal">
+  <div class="modal-content">
+    <h4>Mention légale</h4>
+    <p> 
+      Le site www.jeedom.fr est édité et exploité par la société JEEDOM SAS, société par Actions Simplifiée (SAS) au capital de 4.000 €, immatriculée au Registre du commerce et des sociétés de Lyon sous le n° 810505784 RCS LYON<br/>
+
+      Siège social : 27 rue de la Villette, 69003, Lyon , France<br/>
+      N° de TVA intracommunautaire : FR31810505784<br/>
+      <br/>
+      REPRÉSENTANTS LÉGAUX:<br/>
+      Président: ENOXA SAS<br/>
+      <br/>
+      CONTACT :<br/>
+      Notre service clients est joignable par email à l’adresse contact@jeedom.com<br/>
+      <br/>
+      HÉBERGEUR<br/>
+      L’hébergement du site www.jeedom.fr est assuré par :<br/>
+      OVH<br/>
+      www.ovh.com<br/>
+      2 rue Kellermann - 59100 Roubaix - France<br/>
+      <br/>
+      Directeur de la publication et webmaster : M. GEVREY Loic</p>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
