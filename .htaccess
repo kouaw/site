@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^$ https://jeedom.fr/site/fr [R=301,L]
