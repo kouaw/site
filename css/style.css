@@ -55,3 +55,60 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.lang {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    height: 70px;
+}
+
+.lang:hover .lang2 {
+    -webkit-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    transform: translateX(-200px);
+    background-color: #96C927;
+}
+
+.lang:hover .lang3 {
+    display: table;
+}
+
+.lang2 {
+    width: 70px;
+    height: 70px;
+    background-color: #454449;
+    position: absolute;
+    right: 0px;
+}
+
+.lang3 {
+    width: 200px;
+    height: 70px;
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    right: 0px;
+    color: black;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.select {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.shop {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    background-color: #454449;
+}
+
+.shop:hover {
+    background-color: #96C927;
+}
