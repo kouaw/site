@@ -164,7 +164,91 @@ The Jeedom software is perfectly optimized for your box, preinstalled and precon
       </div>
     </div>
 
+<div class="container">
+	  <div class="section">
+	
+	    <div class="row">
+	      <div class="col s12 center">
+	        <h3 style="color:#96c927"><i class="fa fa-cube"></i></h3>
+	        <h4>La box Jeedom Pro</h4>
+	        <p class="left-align light" style="text-align:justify;">
+	        	The Jeedom Pro+ Box is the top of the range Jeedom box, drawing on the Jeedom Center’s concepts: compatible with most protocols (Z-Wave, RFXcom, EnOcean, Edisio, etc.), adjustable and personalizable.
+	        	Thanks to its format, it can be integrated on the switchboard.
+	        	Its reliability allows the professional to install it in all situations.
+	        </p>
+	
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div style="float:left; margin:auto;"><img class="responsive-img" src="../box/box_pro401.jpg"></div><br>
+	      <div class="col s0 offset-s0" style="float:left;">
+	        <p class="light">
+	          <ul>
+		          <li><i class="fa fa-check" style="color:#96c927"></i>  1 GHz ARM A9 Dual(1) or Quad(2)(3) Core Processor</li>
+		          <li><i class="fa fa-check" style="color:#96c927"></i> 1024(1) / 2048(2) Mo of DDR3 RAM</li>
+		          <li><i class="fa fa-check" style="color:#96c927"></i> 2 external USBs</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> 30 GB SSD hard drive 500 MB/s</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> RTC Clock</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Wifi 802.1 b/g/n (auto switch cable/wifi)<br>
+	                + Bluetooth V 4.0</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> GSM Module(2)</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> UPS battery backup power(2)</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Rail-Din Format Case</li>
+                  <li><i class="fa fa-check" style="color:#96c927"></i> Pro Service Pack</li>
+                  <li><i>(1) Pro Version (available)</i></li>
+                  <li><i>(2) Pro+ Version</i></li>
+                  <li><i>(3) Availability: 1st Quarter 2016</i></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+		<center><a class="waves-effect waves-light btn" style="background-color:#96c927" id="bt_showCompatibility">Buy</a></center>
+      </div>
+   </div>
+   <div class="container" id="div_compatibility" style="display:none;">
+   		<div class="section">
+   			<div class="row">
+				<form method="post" enctype="text/plain" action="mailto:contact@jeedom.com">
+				<div class="col s12 m6">
+				        <div class="icon-block">
+				          <h3 class="center">Individual</h3>
+				          <center>Buy a Jeedom Pro box</center><br/>
+				
+							<div class="input-field">
+							<input id="first_name" name="last_name" type="text" class="validate">
+					          <label for="first_name">Last name</label>
+							</div>
+							<div class="input-field">
+							<input id="last_name" name="first_name" type="text" class="validate">
+					          <label for="last_name">First name</label>
+							</div>
+							<div class="input-field">
+					          <input id="email" name="email" type="email" class="validate">
+					          <label for="email" data-error="wrong" data-success="right">Email</label>
+							</div>
+							<div class="input-field">
+							<input id="postal" type="text" name="postal" class="validate">
+					          <label for="postal">Postal code</label>
+							</div>
+					</div>
+						<center><a href="#" onclick="$(this).closest('form').submit()" style="background-color:#96c927" class="waves-effect waves-light btn" name="submit" value="Envoyer">Send</a></center>
+				</div>
+				</form>
+				<div class="col s12 m6">
+        <div class="icon-block">
+          <h3 class="center">Professional</h3>
+          <center>Please contact Smarthome Europe</center><br/>
+          <center><a class="waves-effect waves-light btn" style="background-color:#96c927" target="_blank" href="http://www.smarthome-europe.com">More infos</a></center>
+        </div>
+      </div>
+        </div>
+      </div>
 
+      
+
+
+</div>
+<!--
     <br><hr><br>
 
     <div class="container">
@@ -227,7 +311,7 @@ It’s possible to place the satellite block in a different location than the bo
         <center><a class="waves-effect waves-light btn" style="background-color:#96c927" href="pro.html">Learn more</a></center>
       </div>
     </div>
-
+-->
     <div id="md_mention_legale" class="modal">
   <div class="modal-content">
     <h4>Legal Notices</h4>
@@ -288,6 +372,23 @@ It’s possible to place the satellite block in a different location than the bo
    $(document).ready(function(){
     $('.modal-trigger').leanModal();
   });
+</script>
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+   $('.modal-trigger').leanModal();
+   $('.slider').slider({indicators:false,interval : 2000});
+
+   $('#bt_showCompatibility').on('click',function(){
+    if($('#div_compatibility').is(':visible')){
+     $('#div_compatibility').hide('blind')
+   }else{
+    $('#div_compatibility').show('blind')
+  }
+});
+
+ });
 </script>
 
 <script>
