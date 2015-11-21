@@ -157,7 +157,7 @@
             <li><i class="fa fa-check" style="color:#96c927"></i> 1024 Mo de RAM DDR3</li>
             <li><i class="fa fa-check" style="color:#96c927"></i> 2 USB externes + 2 ports USB internes<br>
               (emplacements pour clés USB domotiques)</li>
-              <li><i class="fa fa-check" style="color:#96c927"></i> 3 borniers externes avec relais pour contact sec ON/OFF</li>
+              <li><i class="fa fa-check" style="color:#96c927"></i> 2 borniers externes avec relais pour contact sec ON/OFF</li>
               <li><i class="fa fa-check" style="color:#96c927"></i> Led multi-couleurs pour indication</li>
               <li><i class="fa fa-check" style="color:#96c927"></i> Disque dur SSD 500 Mo/s de 30 Go</li>
               <li><i class="fa fa-check" style="color:#96c927"></i> Horloge RTC</li>
@@ -173,7 +173,72 @@
       </div>
     </div>
 
+	<br><hr><br>
 
+	<div class="container">
+	  <div class="section">
+	
+	    <div class="row">
+	      <div class="col s12 center">
+	        <h3 style="color:#96c927"><i class="fa fa-cube"></i></h3>
+	        <h4>La box Jeedom Pro</h4>
+	        <p class="left-align light" style="text-align:justify;">
+	          La box Jeedom Pro est la box Jeedom haut de gamme. Elle reprend les concepts de la Jeedom Center : compatible avec un maximum de protocoles (Z-Wave, RFXcom, EnOcean, Edisio, etc.), modulable et personnalisable.
+	          
+	          Grâce à son format Rail-Din, son intégration est parfaite dans le tableau éléctrique.
+	
+	          A destination des professionnels, sa fiabilité accrue permet de l'installer dans toutes les situations. 
+	        </p>
+	
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div style="float:left; margin:auto;"><img class="responsive-img" src="../box/box_pro401.jpg"></div><br>
+	      <div class="col s0 offset-s0" style="float:left;">
+	        <p class="light">
+	          <ul>
+		          <li><i class="fa fa-check" style="color:#96c927"></i> Processeur Dual(1) ou Quad(2)(3) Core à 1 GHz ARM A9</li>
+		          <li><i class="fa fa-check" style="color:#96c927"></i> 1024(1) / 2048(2) Mo de RAM DDR3</li>
+		          <li><i class="fa fa-check" style="color:#96c927"></i> 2 USB externes</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Disque dur SSD 500 Mo/s de 30 Go</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Horloge RTC</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Wifi 802.1 b/g/n (basculement automatique câble/wifi)<br>
+	                + Bluetooth V 4.0</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Module GSM(2)</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Alimentation secourue sur batterie UPS(2)</li>
+	              <li><i class="fa fa-check" style="color:#96c927"></i> Boîtier au format Rail-Din</li>
+                  <li><i class="fa fa-check" style="color:#96c927"></i> Service Pack Pro</li>
+                  <li><i>(1) Version Pro (disponible à la commercialisation)</i></li>
+                  <li><i>(2) Version Pro+</i></li>
+                  <li><i>(3) Disponibilité 1er trimestre 2016</i></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+		<center><a class="waves-effect waves-light btn" style="background-color:#96c927" id="bt_showCompatibility">Acheter</a></center>
+      </div>
+   </div>
+   <div class="container" id="div_compatibility" style="display:none;">
+   		<div class="section">
+   			<div class="row">
+				<div class="col s12 m6">
+					<div class="icon-block">
+				    	<h3 class="center">Particulier</h3>
+				        <center>Particulier, vous souhaitez vous équiper en box Jeedom Pro</center><br/>
+						<center><a class="waves-effect waves-light btn" style="background-color:#96c927" target="_blank" href="https://smarthomeeurope.wufoo.com/forms/ps988xr1dh64ss/">En savoir plus</a></center>
+					</div>
+				</div>
+				<div class="col s12 m6">
+        			<div class="icon-block">
+          				<h3 class="center">Professionnel</h3>
+          				<center>Merci de prendre contact avec Smarthome Europe</center><br/>
+          				<center><a class="waves-effect waves-light btn" style="background-color:#96c927" target="_blank" href="https://smarthomeeurope.wufoo.com/forms/w1gv9k2b13t8p36/">En savoir plus</a></center>
+        			</div>
+      			</div>
+        	</div>
+      	</div>
+	</div>
+<!--
     <br><hr><br>
 
     <div class="container">
@@ -191,7 +256,7 @@
 
               Il est possible de placer le bloc satellite à un endroit différent de la box pour une meilleure couverture. Pour les protocoles sans maillage (RFXcom, EnOcean...) il est possible d'avoir plusieurs satellites pour augmenter la couverture.
             </p>
-            <center><img class="responsive-img" src="../box/box_pro400.jpg"></center>
+            <center><img class="responsive-img" src="../box/box_pro401.jpg"></center>
           </div>
         </div>
         <div class="row">
@@ -239,7 +304,7 @@
         <center><a class="waves-effect waves-light btn" style="background-color:#96c927" href="pro.html">En savoir plus</a></center>
       </div>
     </div>
-
+-->
     <div id="md_mention_legale" class="modal">
       <div class="modal-content">
         <h4>Mentions légales</h4>
@@ -299,6 +364,23 @@
    $(document).ready(function(){
     $('.modal-trigger').leanModal();
   });
+</script>
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+   $('.modal-trigger').leanModal();
+   $('.slider').slider({indicators:false,interval : 2000});
+
+   $('#bt_showCompatibility').on('click',function(){
+    if($('#div_compatibility').is(':visible')){
+     $('#div_compatibility').hide('blind')
+   }else{
+    $('#div_compatibility').show('blind')
+  }
+});
+
+ });
 </script>
 
 <script>
