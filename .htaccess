@@ -1,2 +1,8 @@
-RewriteEngine on
-RewriteRule ^$ https://jeedom.fr/site/fr [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?jeedom.fr(.*) [OR]
+RewriteCond %{HTTP_HOST} ^jeedom.com(.*) [OR]
+RewriteCond %{HTTP_HOST} ^(www.)?site.jeedom.com(.*) [OR]
+RewriteCond %{HTTP_HOST} ^(www.)?site.jeedom.fr(.*)
+RewriteRule ^(.*)$ https://www.jeedom.com/site/$1 [R=permanent,L]
+
+RewriteRule ^$ https://www.jeedom.com/site/fr [R=301,L]
